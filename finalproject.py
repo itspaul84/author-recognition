@@ -1,7 +1,4 @@
-# Final Project
-# Paul Hurley
-# Partner: Kate Bernstein
-# Partner email: kbern@bu.edu
+# Basic text recognition to help determine authorship, given an idea as to who the author might be
 
 import math
 
@@ -303,28 +300,17 @@ def test():
 
 
 def run_tests():
-    """ your docstring goes here """
-    source1 = TextModel('The New Yorker')
-    source1.add_file('NewYorkerFinalProject.txt')
+    """ Goes through the program """
+    source1 = TextModel(Insert Name)
+    source1.add_file('source1.txt')
 
-    source2 = TextModel('Washington Post')
-    source2.add_file('WashPostFinalProject.txt')
+    source2 = TextModel(Insert Name)
+    source2.add_file('source2.txt')
 
-    new1 = TextModel('Boston Globe')
-    new1.add_file('BostonGlobe.txt')
+    new1 = TextModel(Insert Name)
+    new1.add_file('new1.txt')
     new1.classify(source1, source2)
 
-    new2 = TextModel('Breitbart')
-    new2.add_file('Breitbart.txt')
-    new2.classify(source1, source2)
-
-    new3 = TextModel('New Yorker Extra')
-    new3.add_file('NewYorkerExtra.txt')
-    new3.classify(source1, source2)
-
-    new4 = TextModel('Washington Post Extra')
-    new4.add_file('WashPostExtra.txt')
-    new4.classify(source1, source2)
 
 
 
